@@ -1,0 +1,257 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/green"
+    tools:context=".ClickedRecycler">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolBar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/najm"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0"
+        app:navigationIcon="@drawable/back_24"
+        app:title="Accident Report">
+
+    </androidx.appcompat.widget.Toolbar>
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardView"
+        android:layout_width="350dp"
+        android:layout_height="550dp"
+        android:layout_marginVertical="200dp"
+        android:alpha=".9"
+        app:cardCornerRadius="12dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.491"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.35">
+        <TextView
+            android:id="@+id/Name"
+            android:layout_width="60dp"
+            android:layout_height="32dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="100dp"
+            android:layout_marginBottom="20dp"
+            android:textColor="@color/black"
+            android:text="Name:"
+            android:textSize="20sp"
+            app:layout_constraintBottom_toTopOf="@+id/firstPhoneNum"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.075"
+            app:layout_constraintStart_toStartOf="parent" />
+
+        <TextView
+            android:id="@+id/firstName"
+            android:layout_width="100dp"
+            android:layout_height="32dp"
+            android:layout_marginLeft="90dp"
+            android:layout_marginTop="100dp"
+            android:layout_marginBottom="20dp"
+            android:hint="Name"
+            android:textSize="20sp"
+            app:layout_constraintBottom_toTopOf="@+id/firstPhoneNum"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.075"
+            app:layout_constraintStart_toStartOf="parent" />
+        <TextView
+            android:id="@+id/Phone1"
+            android:layout_width="130dp"
+            android:textColor="@color/black"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="150dp"
+            android:textSize="20sp"
+            android:text="Phone:" />
+
+        <TextView
+            android:id="@+id/firstPhoneNum"
+            android:layout_width="130dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="90dp"
+            android:layout_marginTop="150dp"
+            android:ems="10"
+            android:textSize="20sp"
+            android:hint="phone number"
+            android:inputType="date"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.109"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="20sp"
+            android:layout_marginLeft="20dp"
+            android:textColor="@color/black"
+            android:layout_marginTop="55dp"
+            android:text="First driver"
+            android:textStyle="bold" />
+        <TextView
+            android:id="@+id/textView3"
+            android:layout_width="wrap_content"
+            android:layout_height="29dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="300dp"
+            android:textColor="@color/black"
+            android:text="Second driver"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+        <TextView
+            android:layout_width="60dp"
+            android:layout_height="32dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="350dp"
+            android:textColor="@color/black"
+            android:layout_marginBottom="20dp"
+            android:text="Name:"
+            android:textSize="20sp"
+            app:layout_constraintBottom_toTopOf="@+id/firstPhoneNum"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.075"
+            app:layout_constraintStart_toStartOf="parent" />
+
+        <TextView
+            android:id="@+id/Secondtname"
+            android:layout_width="250dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="90dp"
+            android:layout_marginTop="350dp"
+            android:ems="10"
+            android:hint="Name"
+            android:textSize="20sp"
+            android:inputType="textPersonName"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.137"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView3" />
+        <TextView
+            android:layout_width="130dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="400dp"
+            android:textSize="20sp"
+            android:textColor="@color/black"
+            android:text="Phone:" />
+        <TextView
+            android:id="@+id/SecondPNum"
+            android:layout_width="250dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="90dp"
+            android:layout_marginTop="400dp"
+            android:ems="10"
+            android:textSize="20sp"
+            android:hint="Phone number"
+            android:inputType="number"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.109"
+            app:layout_constraintStart_toStartOf="parent" />
+        <TextView
+            android:layout_width="250dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="200dp"
+            android:textColor="@color/black"
+            android:ems="10"
+            android:text="Car No:"
+            android:textSize="20sp"/>
+
+        <TextView
+            android:id="@+id/firstCarNum"
+            android:layout_width="250dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="90dp"
+            android:layout_marginTop="200dp"
+            android:ems="10"
+            android:textSize="20sp"
+            android:hint="Car number"
+            android:inputType="number"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.109"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/firstPhoneNum" />
+        <TextView
+            android:layout_width="130dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="450dp"
+            android:textSize="20sp"
+            android:text="Car No:"
+            android:textColor="@color/black"/>
+        <TextView
+            android:id="@+id/SecondCarNum"
+            android:layout_width="250dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="90dp"
+            android:layout_marginTop="450dp"
+            android:ems="10"
+            android:textSize="20sp"
+            android:hint="Car number"
+            android:inputType="number"
+            app:layout_constraintBottom_toTopOf="@+id/Check2"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.109"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/SecondPNum"
+            app:layout_constraintVertical_bias="0.17" />
+        <TextView
+            android:layout_width="250dp"
+            android:layout_height="49dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="250dp"
+            android:text="has a valid car insurance?"
+            android:textColor="@color/black"
+            android:textSize="20sp"
+            android:layout_marginBottom="32dp"/>
+
+        <TextView
+            android:id="@+id/Check1"
+            android:layout_width="250dp"
+            android:layout_height="49dp"
+            android:layout_marginLeft="255dp"
+            android:layout_marginTop="250dp"
+            android:layout_marginBottom="32dp"
+            android:text="check"
+            android:textSize="20sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.072"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/firstCarNum" />
+<TextView
+    android:text="has a valid car insurance?"
+    android:layout_width="250dp"
+    android:layout_height="52dp"
+    android:layout_marginLeft="20dp"
+    android:layout_marginTop="500dp"
+    android:textSize="20dp"
+    android:textColor="@color/black"></TextView>
+        <TextView
+            android:id="@+id/Check2"
+            android:layout_width="250dp"
+            android:layout_height="52dp"
+            android:layout_marginLeft="255dp"
+            android:layout_marginTop="500dp"
+            android:text="check"
+            android:textSize="20sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.09"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/SecondPNum"
+            app:layout_constraintVertical_bias="0.371" />
+
+    </androidx.cardview.widget.CardView>
+</androidx.constraintlayout.widget.ConstraintLayout>
